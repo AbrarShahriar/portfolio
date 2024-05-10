@@ -1,5 +1,6 @@
 import { projects } from "@/data";
 import { randomNumber } from "@/utils";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
@@ -67,7 +68,9 @@ function Project({
       className={` relative flex flex-col min-w-80 max-w-lg sm:h-fit bg-dark rounded-3xl p-3 m-10 handle-hover border-2 border-solid ${getRandomNeonColor()}`}
     >
       <div className=" relative rounded-xl">
-        <img
+        <Image
+          width={1000}
+          height={1000}
           className="shadow-lg rounded-xl max-w-[100%] transition-all duration-100 ease-in mb-5"
           src={coverImg}
           alt={projectName}

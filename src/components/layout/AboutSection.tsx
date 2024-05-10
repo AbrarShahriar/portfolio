@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -23,7 +24,9 @@ export default function AboutSection() {
             />
           </svg>
         </div>
-        <img
+        <Image
+          width={200}
+          height={200}
           className="border-[5px] border-solid border-dark w-[200px] h-[200px] object-cover rounded-full "
           src="https://avatars.githubusercontent.com/u/68944030?v=4"
           alt=""
