@@ -9,6 +9,7 @@ const dancingScript = Dancing_Script({ subsets: ["latin"] });
 
 const blobs = [
   <svg
+    key={1}
     className="blob blob-1"
     viewBox="0 0 200 200"
     xmlns="http://www.w3.org/2000/svg"
@@ -20,6 +21,7 @@ const blobs = [
     ></path>
   </svg>,
   <svg
+    key={2}
     className="blob blob-2"
     viewBox="0 0 200 200"
     xmlns="http://www.w3.org/2000/svg"
@@ -31,6 +33,7 @@ const blobs = [
     ></path>
   </svg>,
   <svg
+    key={3}
     className="blob blob-3"
     viewBox="0 0 200 200"
     xmlns="http://www.w3.org/2000/svg"
@@ -42,6 +45,7 @@ const blobs = [
     ></path>
   </svg>,
   <svg
+    key={4}
     className="blob blob-4"
     viewBox="0 0 200 200"
     xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +57,7 @@ const blobs = [
     ></path>
   </svg>,
   <svg
+    key={5}
     className="blob blob-5"
     viewBox="0 0 200 200"
     xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +73,9 @@ const blobs = [
 export default function LandingSection() {
   return (
     <div className="relative landing-section bg-dark ">
-      {blobs.map((BlobEl) => BlobEl)}
+      {blobs.map((BlobEl, i) => (
+        <div key={i}>{BlobEl}</div>
+      ))}
       {/* HEADER FOR LOGO */}
       <header>
         <div className="p-3 bg-primary">
