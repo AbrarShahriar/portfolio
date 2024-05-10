@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blob {
+  width: 30%;
+  position: absolute;
+  opacity: 0.2;
+}
+
+.blob-1 {
+  top: 0;
+  right: 4%;
+  animation: float1 60s infinite linear;
+  animation-direction: alternate;
+}
+.blob-2 {
+  top: 50%;
+  left: 20%;
+  animation: float2 60s ease infinite;
+  animation-direction: alternate;
+}
+.blob-3 {
+  top: 30%;
+  left: 40%;
+  animation: float3 60s ease-out infinite;
+  animation-direction: alternate;
+}
+.blob-4 {
+  bottom: 0;
+  right: 20%;
+  animation: float4 60s ease-in-out infinite;
+  animation-direction: alternate;
+}
+.blob-5 {
+  top: 20%;
+  right: 70%;
+  animation: float5 60s ease infinite;
+  animation-direction: alternate;
+}
+
+@keyframes float1 {
+  0%,
+  100% {
+    top: 0%;
+    right: 4%;
+  }
+  25% {
+    top: 16%;
+    right: 26%;
+  }
+  50% {
+    top: 10%;
+    right: 70%;
+  }
+  75% {
+    top: 60%;
+    right: 50%;
+  }
+}
+@keyframes float2 {
+  0%,
+  100% {
+    top: 50%;
+    left: 20%;
+  }
+  25% {
+    top: 30%;
+    left: 10%;
+  }
+  50% {
+    top: 83%;
+    left: 70%;
+  }
+  75% {
+    top: 12%;
+    left: 32%;
+  }
+}
+@keyframes float3 {
+  0%,
+  100% {
+    top: 30%;
+    left: 40%;
+  }
+  25% {
+    top: 10%;
+    left: 10%;
+  }
+  50% {
+    top: 0%;
+    left: 70%;
+  }
+  75% {
+    top: 56%;
+    left: 82%;
+  }
+}
+@keyframes float4 {
+  0%,
+  100% {
+    bottom: 0;
+    right: 20%;
+  }
+  25% {
+    bottom: 10%;
+    right: 70%;
+  }
+  50% {
+    bottom: 30%;
+    right: 20%;
+  }
+  75% {
+    bottom: 70%;
+    right: 30%;
+  }
+}
+@keyframes float5 {
+  0%,
+  100% {
+    top: 20%;
+    right: 70%;
+  }
+  25% {
+    top: 57%;
+    right: 0%;
+  }
+  50% {
+    top: 40%;
+    right: 40%;
+  }
+  75% {
+    top: 10%;
+    right: 20%;
+  }
+}

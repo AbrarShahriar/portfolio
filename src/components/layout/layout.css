@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .blob {
+    @apply absolute z-30 w-1/3 opacity-20;
+  }
+
+  .text-shadow-light {
+    text-shadow: 5px 5px white;
+  }
+
+  .handle-hover:hover .links * {
+    opacity: 1;
+  }
+
+  .handle-hover:hover img {
+    transform: scale(1.01);
+    filter: blur(2px);
+  }
+
+  .handle-about-hover:hover > div {
+    transform: translateY(-200px) rotate(-50deg);
+    opacity: 0;
+  }
+
+  .keypoint {
+    color: theme("colors.primary");
+  }
+
+  .otc {
+    outline: 2px solid red;
+  }
+
+  .bdr {
+    border: 2px solid red;
+  }
+
+  .about__input {
+    @apply flex flex-col p-2 m-2;
+  }
+
+  .about__input span {
+    @apply mb-1 text-[1.1em];
+  }
+
+  .about__input input,
+  .about__input textarea {
+    @apply p-3 rounded-lg bg-[rgba(82,82,82,0.5)] text-light;
+  }
+
+  .about__input input:focus,
+  .about__input textarea:focus {
+    @apply bg-[rgba(82,82,82,1)]  border-none outline-none;
+  }
+
+  .handle-hover-fly:hover {
+    transform: scale(1.05);
+  }
+
+  .handle-hover-fly span svg {
+    @apply shadow-2xl;
+  }
+  .handle-hover-fly:hover span svg {
+    color: theme("colors.light");
+    transform: translate(5px, -15px) scale(2) rotate(10deg);
+  }
+
+  .or-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 40px 0;
+    font-size: 1.1em;
+    opacity: 0.5;
+  }
+
+  .or-divider::after,
+  .or-divider::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgba(82, 82, 82, 1);
+    margin: 0 20px;
+  }
+}
