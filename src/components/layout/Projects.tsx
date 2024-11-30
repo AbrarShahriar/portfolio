@@ -7,7 +7,7 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 export default function Projects() {
   return (
-    <div className="flex  flex-wrap items-stretch justify-center text-dark">
+    <div className="flex  flex-wrap items-stretch justify-center text-dark ">
       {projects.map((project) => (
         <Project {...project} key={project.projectName} />
       ))}
@@ -65,7 +65,7 @@ function Project({
   };
   return (
     <div
-      className={` relative flex flex-col min-w-80 max-w-lg sm:h-fit bg-dark rounded-3xl p-3 m-10 handle-hover border-2 border-solid ${getRandomNeonColor()}`}
+      className={`relative flex flex-col min-w-80 max-w-lg sm:h-fit bg-dark rounded-3xl p-3 m-10 handle-hover border-2 border-solid ${getRandomNeonColor()} sm:min-w-[90%]`}
     >
       <div className=" relative rounded-xl">
         <Image

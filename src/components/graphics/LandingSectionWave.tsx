@@ -2,7 +2,11 @@ import React from "react";
 
 export default function LandingSectionWave() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg
+      className="sm:pb-10"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
       <path
         fill="#e6e2dd"
         fillOpacity="1"

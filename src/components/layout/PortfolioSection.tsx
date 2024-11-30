@@ -3,7 +3,7 @@ import Projects from "./Projects";
 
 export default function PortfolioSection() {
   return (
-    <div>
+    <div id="portfolio">
       <div className="pb-[100px] text-light bg-dark">
         <h1 className="pb-1.5 mt-0 mb-12 ml-auto mr-auto text-5xl font-extrabold text-center border-b-2 border-solid w-fit border-light">
           Portfolio

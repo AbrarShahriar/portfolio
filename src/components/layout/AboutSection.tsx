@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <div
       id="about"
-      className=" bg-transparent h-[100vh] text-center sm:mb-[20px]"
+      className=" bg-transparent h-[100vh] text-center sm:h-[80vh] sm:mt-[10vh]"
     >
       <h1 className="text-[25vw] text-white opacity-35 rotate-[7deg] absolute -z-10 font-extrabold">
         ABOUT

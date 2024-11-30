@@ -4,6 +4,7 @@ import { Dancing_Script } from "next/font/google";
 import "./layout.css";
 import CallToAction from "../buttons/CallToAction";
 import LandingSectionWave from "../graphics/LandingSectionWave";
+import Image from "next/image";
 
 const dancingScript = Dancing_Script({ subsets: ["latin"] });
 
@@ -82,7 +83,14 @@ export default function LandingSection() {
           <h2
             className={`inline-block p-1.5 ml-3 text-3xl border-2 border-solid rounded-full cursor-pointer font-si text-light border-light ${dancingScript.className}`}
           >
-            <Link href="/">SA</Link>
+            <Link href="/">
+              <Image
+                src={"/images/logo.png"}
+                width={32}
+                height={32}
+                alt="logo"
+              />
+            </Link>
           </h2>
         </div>
       </header>

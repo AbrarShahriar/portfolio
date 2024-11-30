@@ -2,40 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-.blob {
-  width: 30%;
-  position: absolute;
-  opacity: 0.2;
+:root {
+  --anim-duration: 60s;
 }
 
 .blob-1 {
   top: 0;
   right: 4%;
-  animation: float1 60s infinite linear;
+  animation: float1 var(--anim-duration) infinite linear;
   animation-direction: alternate;
 }
 .blob-2 {
   top: 50%;
   left: 20%;
-  animation: float2 60s ease infinite;
+  animation: float2 var(--anim-duration) ease infinite;
   animation-direction: alternate;
 }
 .blob-3 {
   top: 30%;
   left: 40%;
-  animation: float3 60s ease-out infinite;
+  animation: float3 var(--anim-duration) ease-out infinite;
   animation-direction: alternate;
 }
 .blob-4 {
   bottom: 0;
   right: 20%;
-  animation: float4 60s ease-in-out infinite;
+  animation: float4 var(--anim-duration) ease-in-out infinite;
   animation-direction: alternate;
 }
 .blob-5 {
   top: 20%;
   right: 70%;
-  animation: float5 60s ease infinite;
+  animation: float5 var(--anim-duration) ease infinite;
   animation-direction: alternate;
 }
 
@@ -50,11 +48,12 @@
     right: 26%;
   }
   50% {
+    transform: rotate(-360deg);
     top: 10%;
-    right: 70%;
+    right: 50%;
   }
   75% {
-    top: 60%;
+    top: 50%;
     right: 50%;
   }
 }
@@ -69,7 +68,8 @@
     left: 10%;
   }
   50% {
-    top: 83%;
+    transform: rotate(360deg);
+    top: 53%;
     left: 70%;
   }
   75% {
@@ -88,11 +88,12 @@
     left: 10%;
   }
   50% {
+    transform: rotate(-360deg);
     top: 0%;
     left: 70%;
   }
   75% {
-    top: 56%;
+    top: 36%;
     left: 82%;
   }
 }
@@ -107,6 +108,7 @@
     right: 70%;
   }
   50% {
+    transform: rotate(360deg);
     bottom: 30%;
     right: 20%;
   }
@@ -122,10 +124,11 @@
     right: 70%;
   }
   25% {
-    top: 57%;
+    top: 47%;
     right: 0%;
   }
   50% {
+    transform: rotate(-360deg);
     top: 40%;
     right: 40%;
   }

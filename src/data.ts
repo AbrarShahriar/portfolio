@@ -17,6 +17,15 @@ export const projects: IProjectProps[] = [
     projectTheme: "light",
   },
   {
+    coverImg: "/images/cvly.png",
+    repoLink: "https://github.com/AbrarShahriar/cvly",
+    projectLink: "https://cvly.abrarshahriar.com/",
+    projectName: "CVly",
+    projectDesc: `A simple CV making app that is completely client-side, no hidden paywalls! I wanted a simple CV making tool that was simple to use and didn't require any extra skilss, sign-ups or payment. Hence, I created CVly - fill in your information, pick a template and download a ready-made ATS-friendly CV.`,
+    tags: ["nextjs", "typescript", "shadcn", "tailwind", "react-pdf"],
+    projectTheme: "dark",
+  },
+  {
     coverImg: "/images/amike.png",
     repoLink: "https://github.com/AbrarShahriar/ami.ke_theme",
     projectLink: "https://amike-theme.netlify.app/",
