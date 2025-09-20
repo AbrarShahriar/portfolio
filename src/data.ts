@@ -2,6 +2,22 @@ import { IProjectProps } from "./components/layout/Projects";
 
 export const projects: IProjectProps[] = [
   {
+    coverImg: "/images/mochapi.png",
+    repoLink: "https://github.com/AbrarShahriar/mochapi/",
+    projectLink: "https://mochapi.abrarshahriar.com/",
+    projectName: "MochApi",
+    projectDesc: `A Mock API toolkit that you can use to generate, customize, and test API endpoints in seconds with built-in and user-defined custom functions, real-time responses, and seamless integration—without managing a backend.`,
+    tags: [
+      "nextjs",
+      "typescript",
+      "shadcn",
+      "tailwind",
+      "nestjs",
+      "user authentication",
+    ],
+    projectTheme: "light",
+  },
+  {
     coverImg: "/images/dMind.png",
     repoLink: "https://github.com/AbrarShahriar/dMind-desktop",
     projectLink: "https://sourceforge.net/projects/dmind/",
@@ -51,41 +67,7 @@ export const projects: IProjectProps[] = [
     ],
     projectTheme: "dark",
   },
-  {
-    coverImg: "/images/fb-clone.png",
-    repoLink: "https://github.com/AbrarShahriar/facebook-clone",
-    projectLink: "https://facebook-clone-adib.netlify.app/",
-    projectName: "Facebook Clone",
-    projectDesc: `The Facebook clone from <a href="https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ">Clever Programmer</a>. Seems like a lot of clones huh! Part learning a new technology is pattern recognition. Although, I try to add some of my own touches to every clone I do.`,
-    tags: [
-      "authentication",
-      "responsive",
-      "crud",
-      "react",
-      "blazzing fast",
-      "firebase",
-    ],
-    projectTheme: "dark",
-  },
-  {
-    coverImg: "/images/spotify-clone.png",
-    repoLink: "https://github.com/AbrarShahriar/spotify-clone",
-    projectLink: "https://spotify-clone-sa.netlify.app",
-    projectName: "Spotify Clone",
-    projectDesc: `The Spotify clone from <a href="https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ">Clever Programmer</a>. This one was quite challenging. Configuring the Spotify API was a real pain. Moreover, making it responsive was quite of a challenge. But hey! challenges makes us grow, right??`,
-    tags: ["Spotify API", "modern-ui", "react", "context API", "responsive"],
 
-    projectTheme: "light",
-  },
-  {
-    coverImg: "/images/netflix-clone.jpg",
-    repoLink: "https://github.com/AbrarShahriar/netflix-clone/",
-    projectLink: "https://netflix-clone-adib.netlify.app",
-    projectName: "Netflix Clone",
-    projectDesc: `The Netflix clone from <a href="https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ">Clever Programmer</a>. This one was fairly simpler to make as it doesn't have user authentication available right now. Overall, it was a fun build!`,
-    tags: ["TMDB API", "responsive", "react"],
-    projectTheme: "light",
-  },
   {
     coverImg: "/images/fast-shot.png",
     repoLink: "https://github.com/AbrarShahriar/fast-shot",

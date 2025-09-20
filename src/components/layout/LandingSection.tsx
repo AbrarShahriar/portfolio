@@ -5,6 +5,7 @@ import "./layout.css";
 import CallToAction from "../buttons/CallToAction";
 import LandingSectionWave from "../graphics/LandingSectionWave";
 import Image from "next/image";
+import VisitBlog from "../buttons/VisitBlog";
 
 const dancingScript = Dancing_Script({ subsets: ["latin"] });
 
@@ -107,7 +108,10 @@ export default function LandingSection() {
               me!
             </p>
 
-            <CallToAction />
+            <div className="flex gap-4 items-center">
+              <CallToAction />
+              <VisitBlog />
+            </div>
           </div>
         </div>
       </section>

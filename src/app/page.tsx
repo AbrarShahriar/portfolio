@@ -1,4 +1,5 @@
 import AboutSection from "@/components/layout/AboutSection";
+import BlogSection from "@/components/layout/BlogSection";
 import ContactSection from "@/components/layout/ContactSection";
 import FixedNav from "@/components/layout/FixedNav";
 import LandingSection from "@/components/layout/LandingSection";
@@ -9,10 +10,10 @@ export default function Home() {
     <main className="overflow-x-hidden">
       <div>
         <LandingSection />
-
         <FixedNav />
         <PortfolioSection />
         <AboutSection />
+        <BlogSection />
         <ContactSection />
       </div>
     </main>
