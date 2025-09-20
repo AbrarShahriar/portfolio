@@ -24,7 +24,7 @@ export default function ContributionSection() {
 
   return (
     <div className="mb-48 mt-12 mx-auto py-8 bg-primary w-[80%] rounded-[30px] shadow-lg">
-      <h1 className="pb-1.5 mt-0 mb-6 ml-auto mr-auto text-5xl font-extrabold text-center border-b-2 border-solid border-dark w-fit text-dark">
+      <h1 className="pb-1.5 mt-0 mb-6 ml-auto mr-auto text-5xl font-extrabold text-center border-b-2 border-solid border-dark w-fit text-dark md:text-3xl">
         Contributions
       </h1>
       <div className="w-[90%] m-auto  flex items-start justify-center gap-16">

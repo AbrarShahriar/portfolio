@@ -34,7 +34,7 @@ export default function BlogSection() {
   return (
     <div className={`  ${data.length > 0 && "mb-24 mt-12 mx-auto py-8"}`}>
       {data.length > 0 && (
-        <h1 className="pb-1.5 mt-0 mb-12 ml-auto mr-auto text-5xl font-extrabold text-center border-b-2 border-solid border-dark w-fit text-dark">
+        <h1 className="pb-1.5 mt-0 mb-12 ml-auto mr-auto text-5xl font-extrabold text-center border-b-2 border-solid border-dark w-fit text-dark md:text-3xl">
           Recent Writings
         </h1>
       )}
