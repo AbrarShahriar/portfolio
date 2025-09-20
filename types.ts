@@ -13,3 +13,10 @@ export interface BlogPost {
     order: number; // Position in the series
   };
 }
+
+export interface ContributionType {
+  image: string;
+  projectTitle: string;
+  pullReqLink: string;
+  description: JSX.Element;
+}
